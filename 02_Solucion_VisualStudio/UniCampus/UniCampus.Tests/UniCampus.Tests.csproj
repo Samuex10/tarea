@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <IsPackable>false</IsPackable>
+    <RootNamespace>UniCampus.Tests</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="3.6.3" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.6.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UniCampus.BLL\UniCampus.BLL.csproj" />
+    <ProjectReference Include="..\UniCampus.DAL\UniCampus.DAL.csproj" />
+    <ProjectReference Include="..\UniCampus.Entities\UniCampus.Entities.csproj" />
+  </ItemGroup>
+</Project>
